@@ -163,5 +163,5 @@ timedatectl set-timezone "Asia/Shanghai"
 set_wk_env
 mk_wk_run_sh
 #scp lotus-worker
-apt install expect -y
-exec ./scp_lotus-worker.sh
+#apt install expect -y
+#exec ./scp_lotus-worker.sh
