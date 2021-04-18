@@ -137,12 +137,16 @@ source /etc/profile
 
 mk_wk_run_sh() {
 if [[ ! -d "/ipfs/filecoin/lotusworker1" ]]; then
-    mkdir -p /ipfs/filecoin/lotusworker1 /ipfs/filecoin/tmpdir1 /ipfs/filecoin/tmpdir2
+    mkdir -p /ipfs/filecoin/lotusworker1 
+    mkdir -p /ipfs/filecoin/lotusworker2 
+    mkdir -p /ipfs/filecoin/tmpdir1 
+    mkdir -p /ipfs/filecoin/tmpdir2
 fi
 if [[ ! -f "/filestar/lotusworker/" ]]; then
-cd /ipfs/filecoin/lotusworker1 && wget https://github.com/ncgege/fil-auto-deploy/run-fil-wk-moran-p1p2.sh ./
-cd /ipfs/filecoin/ && wget https://github.com/ncgege/fil-auto-deploy/killworker.sh ./
-wget https://github.com/ncgege/fil-auto-deploy/wk-ap-switch.sh ./
+cp ./run-fil-wk-moran-p1p2.sh /ipfs/filecoin/lotusworker1/
+cp ./run-fil-wk-moran-p1p2.sh /ipfs/filecoin/lotusworker1/
+cp ~/fil-auto-deploy/killworker.sh /ipfs/filecoin/
+cp ~/fil-auto-deploy//wk-ap-switch.sh  /ipfs/filecoin/
 fi
 }
 
