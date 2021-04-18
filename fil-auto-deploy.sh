@@ -138,9 +138,8 @@ mk_wk_run_sh() {
 if [[ ! -d "/ipfs/filecoin/lotusworker1" ]]; then
     mkdir -p /ipfs/filecoin/lotusworker1
 fi
-if [[ ! -f "/filestar/lotusworker/run.sh" ]]; then
-wkip=`LC_ALL=C ifconfig | grep 'inet'| grep -v '127.0.0.1'|grep -v inet6 |awk '{print $2}'`
-	echo "nohup lotus-worker --worker-repo /filestar/lotusworker run --listen ${wkip}:3457 --precommit2=false --commit=false  --timeout 0 > /filestar/worker.log 2>&1 &" > /filestar/lotusworker/run.sh
+if [[ ! -f "/filestar/lotusworker/" ]]; then
+cd /ipfs/filecoin/lotusworker1 && wget https://github.com/ncgege/fil-auto-deploy/run-fil-wk-moran-p1p2.sh ./
 fi
 }
 
@@ -152,8 +151,8 @@ set_ulimits
 echo "sect timezone"
 timedatectl set-timezone "Asia/Shanghai"
 #reset swap
-del_swap
-add_swap
+#del_swap
+#add_swap
 set_wk_env
 mk_wk_run_sh
 #scp lotus-worker
