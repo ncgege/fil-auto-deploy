@@ -128,6 +128,7 @@ if [ $? -ne 0 ]; then
    cat >>/etc/profile<<EOF
 export RUST_BACKTRACE=info
 export RUST_LOG=info
+EOF
 else
   echo "wk env has already set"
 fi
