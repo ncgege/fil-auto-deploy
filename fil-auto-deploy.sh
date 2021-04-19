@@ -144,7 +144,7 @@ if [[ ! -d "/ipfs/filecoin/lotusworker1" ]]; then
 fi
 if [[ ! -f "/filestar/lotusworker/" ]]; then
 cp ./run-fil-wk-moran-p1p2.sh /ipfs/filecoin/lotusworker1/
-cp ./run-fil-wk-moran-p1p2.sh /ipfs/filecoin/lotusworker1/
+cp ./run-fil-wk-moran-p2c1.sh /ipfs/filecoin/lotusworker2/
 cp ~/fil-auto-deploy/killworker.sh /ipfs/filecoin/
 cp ~/fil-auto-deploy//wk-ap-switch.sh  /ipfs/filecoin/
 fi
