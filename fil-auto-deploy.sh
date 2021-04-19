@@ -3,7 +3,7 @@ check_env() {
   # env
   sudo apt update
   sudo apt upgrade -y
-  sudo apt install gcc git bzr jq pkg-config mesa-opencl-icd ocl-icd-opencl-dev gdisk zhcon g++ llvm clang make net-tools  hwloc libhwloc-dev -y
+  sudo apt install gcc git bzr jq pkg-config mesa-opencl-icd ocl-icd-opencl-dev gdisk zhcon g++ llvm clang make net-tools  hwloc libhwloc-dev cargo -y
   
   if [ -z $GOPROXY ]; then
     sudo echo "#GOPROXY
