@@ -142,7 +142,7 @@ if [[ ! -d "/ipfs/filecoin/lotusworker1" ]]; then
     mkdir -p /ipfs/filecoin/tmpdir1 
     mkdir -p /ipfs/filecoin/tmpdir2
 fi
-if [[ ! -f "/filestar/lotusworker/" ]]; then
+if [[ ! -f "/ipfs/filecoin/lotusworker1/" ]]; then
 cp ./run-fil-wk-moran-p1p2.sh /ipfs/filecoin/lotusworker1/
 cp ./run-fil-wk-moran-p2c1.sh /ipfs/filecoin/lotusworker2/
 cp ~/fil-auto-deploy/killworker.sh /ipfs/filecoin/
