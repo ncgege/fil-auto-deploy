@@ -1,4 +1,4 @@
-export MINER_API_INFO=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBbGxvdyI6WyJyZWFkIiwid3JpdGUiLCJzaWduIiwiYWRtaW4iXX0.phGnXCKRqfkH3CU2XkcvLagfdgdrPNMHRmAwUZeFkXk:/ip4/192.168.85.101/tcp/2345/http
+export MINER_API_INFO=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBbGxvdyI6WyJyZWFkIiwid3JpdGUiLCJzaWduIiwiYWRtaW4iXX0.sbKnUI6V1If08_-z_9_knoPcYZw-Dkq0nosaALph6bo:/ip4/192.168.85.102/tcp/2345/http
 export FIL_PROOFS_PARAMETER_CACHE=/ipfs/filecoin/filecoin-proof-parameters-v28 
 export FIL_PROOFS_PARENT_CACHE=/ipfs/filecoin/filecoin-parents-cache 
 export TMPDIR=/ipfs/filecoin/tmpdir2
