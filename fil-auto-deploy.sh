@@ -53,6 +53,7 @@ check_rustup() {
     echo "rustup version must > 1.20 . "
     # rustup env config
     if [ ! -s "$HOME/.rustup/config" ]; then
+      mkdir -p "$HOME/.rustup/"
       echo '
       [source.crates-io]
       registry = "https://github.com/rust-lang/crates.io-index"
