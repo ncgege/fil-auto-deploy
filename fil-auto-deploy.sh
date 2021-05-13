@@ -64,7 +64,7 @@ check_rustup() {
     fi
     # rustup install
     apt install libcurl4 curl -y
-    curl https://sh.rustup.rs -sSf | sh -s -- -y && source $HOME/.cargo/env
+    bash  ./rustup-init.sh -s -- -y && source $HOME/.cargo/env
     
     # check
     rustup --version
